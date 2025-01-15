@@ -1,7 +1,7 @@
 <?php
 require "koneksi.php";
 
-if($_SERVER['REQUEST_METHOD']=="POST") {
+if($_SERVER['REQUEST_METHOD']==="POST") {
     $nik= $_POST['nik'];
 
     //cek dulu apakah nik telah terdaftar
@@ -33,24 +33,24 @@ if($_SERVER['REQUEST_METHOD']=="POST") {
     <form action ="" method="post">
         <div class="form-item">
             <label for="nik">NIK</label>
-            <input type="text" name="name" id="nama">
-</div>
-<div class="form-item">
-    <label for="nama">Nama Lengkap</label>
-    <input type="text" name="nama" id="nama">
-</div>
-<div class="form-item">
-    <label for="telepon">Telepon</label>
-    <input type="tel" name="telepon" id="telepon">
-</div>
-<div class="form-item">
-    <label for="username">Username</label>
-    <input type="text" name="username" id="username">
-</div>
-<div class="form-item">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-</div>
+            <input type="text" name="nik" id="nik">
+        </div>
+        <div class="form-item">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama">
+        </div>
+        <div class="form-item">
+            <label for="telepon">Telepon</label>
+            <input type="tel" name="telepon" id="telepon">
+        </div>
+        <div class="form-item">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div class="form-item">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
 <button type="submit">Register</button>
 </form>
 <a href="login.php">Batal</a>
